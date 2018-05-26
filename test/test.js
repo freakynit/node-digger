@@ -94,6 +94,12 @@ describe('digger()', function(){
             .dig()).to.be.equal(100);
     });
 
+    it('should be able to use in one-shot mode', function(){
+        var data = {a: {b: {c: {d: 10}}}};
+
+        expect(digger.dig(data, 'a.b.c.d', 100)).to.be.equal(10);
+    });
+
     it('should be able to throw exception on invalid/null input', function(){
         var data = {a: {b: {c: {d: 10}}}};
 

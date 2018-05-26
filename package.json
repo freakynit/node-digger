@@ -1,6 +1,6 @@
 {
   "name": "node-digger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Digs nested objects out using string or array notation",
   "main": "lib/node-digger.js",
   "scripts": {
