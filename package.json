@@ -1,0 +1,25 @@
+{
+  "name": "digger",
+  "version": "1.0.1",
+  "description": "Digs nested objects out using string or array notation",
+  "main": "lib/digger.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --recursive --reporter spec test/test.js"
+  },
+  "author": "Nitin Bansal <nitinbansal85@gmail.com>",
+  "maintainers": [
+    "Nitin Bansal <nitinbansal85@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/freakynit/digger.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=4.x"
+  }
+}
