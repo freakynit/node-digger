@@ -97,4 +97,7 @@ new digger()
 
 > Exception is thrown if error value is not specified and error condition is met
 
+### For usage in browser, just include [node-digger file](lib/node-digger.js).
+> You can use service like [rawgit](https://rawgit.com/) for same
+
 ### See [test](test/test.js) for all API methods
