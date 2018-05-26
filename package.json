@@ -1,7 +1,7 @@
 {
   "name": "node-digger",
-  "version": "1.0.3",
-  "description": "Digs nested objects out using string or array notation",
+  "version": "1.0.4",
+  "description": "Digs nested objects out using string or/and array notation",
   "main": "lib/node-digger.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --recursive --reporter spec test/test.js"
