@@ -3,11 +3,12 @@ Digs nested objects out using string or/and array notation
 
 ## Usage examples:
 
-1. [Extract nested object](extract-nested-object)
-2. [Extract nested object using array input](extract-nested-object-using-array-input)
-3. [Using constructor to pass some of the inputs](using-constructor-to-pass-some-of-the-inputs)
-4. [Using one-shot mode (less code)](using-one-shot-mode-(less code))
-5. [Error handling](error-handling)
+1. [Extract nested object](#extract-nested-object)
+2. [Extract nested object using array input](#extract-nested-object-using-array-input)
+3. [Using constructor to pass some of the inputs](#using-constructor-to-pass-some-of-the-inputs)
+4. [Using one-shot mode (less code)](#using-one-shot-mode-less-code)
+5. [Error handling](#error-handling)
+5. [Test header](#test-header:)
 
 ### Extract nested object
 ``` javascript
@@ -116,6 +117,9 @@ new digger()
 > Note: Error value is used when either of `data` or `level` is null/undefined
 
 > Exception is thrown if error value is not specified and error condition is met
+
+### Test header:
+hi there
 
 ### For usage in browser, just include [node-digger file](lib/node-digger.js).
 > You can use service like [rawgit](https://rawgit.com/) for same
