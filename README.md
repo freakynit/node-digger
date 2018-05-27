@@ -8,7 +8,7 @@ var digger = require('node-digger');
 ```
 
 ### Browser:
-See [For usage in browser section](#for-usage-in-browser)
+See [Using in browser section](#using-in-browser)
 
 
 ## Usage examples:
@@ -128,7 +128,7 @@ new digger()
 > Exception is thrown if error value is not specified and error condition is met
 
 
-### For usage in browser
+### Using in browser
 1. Use service like [rawgit](https://rawgit.com/) with file [node-digger js file](lib/node-digger.js)
 2. Use any of available CDN providers
 3. Use your own hosting
