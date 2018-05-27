@@ -85,7 +85,7 @@ console.log(digger.dig(data, 'a.b.c.d', 100));
 ``` javascript
 var data = {a: {b: {c: {d: 10}}}};
 
-digger.dig(data, null, 100, "some error value")
+console.log(digger.dig(data, null, 100, "some error value"));
 
 // => "some error value"
 ```
@@ -96,7 +96,22 @@ digger.dig(data, null, 100, "some error value")
 
 var data = {a: {b: {c: {d: 10}}}};
 
-digger.dig(data, null, 100, "some error value")
+console.log(digger.dig(data, null, 100, "some error value"));
+
+// => "some error value"
+```
+
+``` javascript
+// using method chaining
+
+var data = {a: {b: {c: {d: 10}}}};
+
+console.log(new digger()
+    .object(data)
+    .level(null)    // makes error condition true
+    .or(100)
+    .onError("some error value")
+    .dig());
 
 // => "some error value"
 ```
