@@ -105,6 +105,17 @@ describe('digger()', function(){
             .dig()).to.be.equal(100);
     });
 
+    it('should return null when default value is not specified and value is not found in data', function(){
+        var data = {a: {b: {c: {d: 10}}}};
+
+        expect(new digger()
+            .object(data)
+            .level('a.b.c.d.e')
+            .dig()).to.be.equal(null);
+
+        expect(new digger(data, []).dig()).to.be.equal(null);
+    });
+
     it('should be able to throw exception on invalid/null input', function(){
         var data = {a: {b: {c: {d: 10}}}};
 
