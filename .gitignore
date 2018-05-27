@@ -2,3 +2,4 @@
 *.iml
 .idea
 index.js
+local.js
