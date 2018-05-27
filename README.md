@@ -20,7 +20,8 @@ See [Using in browser section](#using-in-browser)
 2. [Extract nested object using array input](#extract-nested-object-using-array-input)
 3. [Using constructor to pass some of the inputs](#using-constructor-to-pass-some-of-the-inputs)
 4. [Using one-shot mode (less code)](#using-one-shot-mode-less-code)
-5. [Error handling](#error-handling)
+5. [Providing default value](#providing-default-value)
+6. [Error handling](#error-handling)
 
 ### Extract nested object
 ``` javascript
@@ -58,7 +59,11 @@ console.log(new digger(data, 'a.b')
 
 // => { c: { d: 10 } }
 ```
+> Note: constructor parameter sequence is: `data, level, orValue, errorValue`
 
+> All constructor parameters can also be specified using chained methods
+
+### Providing default value
 ``` javascript
 var data = {a: {b: {c: {d: 10}}}};
 
@@ -67,9 +72,6 @@ console.log(new digger(data, 'a.b.c.d.e', 100)
 
 // => 100   // default value
 ```
-> Note: constructor parameter sequence is: `data, level, orValue, errorValue`
-
-> All constructor parameters can also be specified using chained methods
 
 ### Using one-shot mode (less code)
 ``` javascript
