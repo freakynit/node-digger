@@ -8,7 +8,7 @@ var digger = require('node-digger');
 ```
 
 ### Browser:
-See [Usage in browser section](#for-usage-in-browser-just-include-node-digger-file)
+See [For usage in browser section](#for-usage-in-browser)
 
 
 ## Usage examples:
