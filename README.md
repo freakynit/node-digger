@@ -149,7 +149,7 @@ new digger()
 
 
 ### Using in browser
-1. Use service like [rawgit](https://rawgit.com/) with file [node-digger js file](lib/node-digger.js)
+1. Use service like [rawgit](https://rawgit.com/) with [node-digger source file](lib/node-digger.js)
 2. Use any of available CDN providers
 3. Use your own hosting
 
