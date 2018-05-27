@@ -1,6 +1,16 @@
 # node-digger
 Digs nested objects out using string or/and array notation
 
+## Installation:
+### Node:
+```javascript
+var digger = require('node-digger');
+```
+
+### Browser:
+See [Usage in browser section](#for-usage-in-browser-just-include-node-digger-file)
+
+
 ## Usage examples:
 
 1. [Extract nested object](#extract-nested-object)
@@ -118,7 +128,9 @@ new digger()
 > Exception is thrown if error value is not specified and error condition is met
 
 
-### For usage in browser, just include [node-digger file](lib/node-digger.js).
-> You can use service like [rawgit](https://rawgit.com/) for same
+### For usage in browser
+1. Use service like [rawgit](https://rawgit.com/) with file [node-digger js file](lib/node-digger.js)
+2. Use any of available CDN providers
+3. Use your own hosting
 
 ### See [test](test/test.js) for all API methods
