@@ -3,6 +3,9 @@ Digs nested objects out using string or/and array notation
 
 ## Installation:
 ### Node:
+```shell
+npm install node-digger
+```
 ```javascript
 var digger = require('node-digger');
 ```
@@ -132,5 +135,7 @@ new digger()
 1. Use service like [rawgit](https://rawgit.com/) with file [node-digger js file](lib/node-digger.js)
 2. Use any of available CDN providers
 3. Use your own hosting
+
+Then just include it in `<script>` tag of your page
 
 ### See [test](test/test.js) for all API methods
